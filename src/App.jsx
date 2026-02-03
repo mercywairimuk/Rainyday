@@ -40,7 +40,7 @@ const RainyDayApp = () => {
 
       const data = await response.json();
       
-      // Simulated rainfall data (in real implementation, use forecast API)
+      
       const simulatedRainfall = Math.random() * 100;
       
       setWeatherData({
@@ -221,14 +221,14 @@ const RainyDayApp = () => {
             </select>
           </div>
 
-          {/* Error Message */}
+          
           {error && (
             <div className="mb-4 p-4 bg-red-50 border-l-4 border-red-500 text-red-700 rounded">
               {error}
             </div>
           )}
 
-          {/* Calculate Button */}
+          
           <button
             onClick={calculateFloodRisk}
             className="w-full py-4 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
@@ -238,7 +238,7 @@ const RainyDayApp = () => {
           </button>
         </div>
 
-        {/* Recommendation Card */}
+        
         {recommendation && (
           <div className={`rounded-2xl shadow-xl p-8 ${
             recommendation.safe 
